@@ -17,9 +17,6 @@ h1{
     box-sizing: content-box;
     display: block;
     margin: auto;
-    max-width: 100%;
-    max-height: 90vh;
-    height: auto;
 }
 .fondoBandera{
     background-image: url(../images/banderaColombia.png);
