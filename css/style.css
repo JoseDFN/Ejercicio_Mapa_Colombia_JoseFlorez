@@ -10,15 +10,18 @@ h1{
     text-align: center;
     opacity: 1;
 }
+.fondoGen{
+    background-color: #E6F7FF;
+}
 .mapaColombia{
     box-sizing: content-box;
     display: block;
     margin: auto;
     max-width: 100%;
-    max-height: 91vh;
+    max-height: 90vh;
     height: auto;
 }
-.FondoBandera{
+.fondoBandera{
     background-image: url(../images/banderaColombia.png);
     background-size: contain;
     background-position: center;
