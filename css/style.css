@@ -6,45 +6,124 @@
     box-sizing: border-box;
     padding: 0px;
 }
+ul {
+    list-style-type: disc; /* Establece el tipo de viñeta como un círculo sólido */
+    margin-left: 20px; /* Añade un margen a la izquierda para alinear la lista */
+    text-align: justify;
+}
+.boton-container {
+    display: flex; /* Habilitar flexbox */
+    justify-content: space-between; /* Espacio entre los botones */
+    align-items: center; /* Centrar verticalmente si es necesario */
+    margin: 10px 0; /* Espaciado externo, opcional */
+}
+
+.boton1 {
+    display: inline-block;
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #bee7bf; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-align: center; /* Centrar texto */
+    text-decoration: none; /* Sin subrayado */
+    border: 1px solid black;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de la fuente */
+    margin: 10px 0; /* Espaciado externo */
+    max-width: max-content;
+}
+.boton1:hover {
+    background-color: #cbeecc; /* Color al pasar el mouse */
+}
+.caja-texto {
+    width: 100%; /* Se ajusta al 100% del contenedor o pantalla, hasta el max-width */
+    max-width: 60%; /* Limita el ancho máximo al 50% de la pantalla */
+    padding: 9px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.55)
+}
+.caja-texto2 {
+    width: 100%; /* Se ajusta al 100% del contenedor o pantalla, hasta el max-width */
+    max-width:fit-content; /* Limita el ancho máximo al 50% de la pantalla */
+    padding: 9px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.55)
+}
+.titleTable{
+    text-align: center;
+    padding: 0.5em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0.2em;
+}
+td{
+    text-align: justify;
+}
 h1{
     text-align: center;
-    opacity: 1;
+    margin-bottom: 0.5em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .fondoGen{
     background-color: #E6F7FF;
 }
-.mapaColombia{
+.tContenido {
+    display: table; /* Ajustar para que sea tratado como tabla */
+    margin-left: auto;
+    margin-right: auto;
+    width: auto; /* Permite que la tabla se ajuste según su contenido */
+}
+.mapas{
     box-sizing: content-box;
     display: block;
     margin: auto;
 }
-.fondoBandera{
+.fondoBanderaCol{
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100%;
+    margin-bottom: 20px;
     background-image: url(../images/banderaColombia.png);
     background-size: contain;
     background-position: center;
     opacity: 1;
 }
-.contenedor{
-    margin: 5px;
-    background-color: #ffe4c4;
-    padding-left: 0.35em;
-    padding-top: 0.2em;
-    padding-bottom: 0.2em;
-    padding-right: 0.35em;
-    padding: 0.4em;
-    max-width: 65%;
-    border: 1px solid #ff0000;
-    border-radius: 0.7em;
-    text-align: justify;
-    box-shadow: 0px 0px 30px 2px #00000082;
+.fondoBanderaRisaralda{
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100%;
+    margin-bottom: 20px;
+    background-image: url(../images/banderaRisaralda.svg.png);
+    background-size: contain;
+    background-position: center;
+    opacity: 1;
+}
 
-}
-.idk{
-    padding: 0.5em;
-    max-width: max-content;
-}
 a:link{
-    color : green;
+    color : black;
     background-color: transparent;
     text-decoration: none;
 }
@@ -63,9 +142,9 @@ a:active{
     background-color: transparent;
     text-decoration: underline;
 }
-a:link, a:visited{
-    background-color: #f44336;
-    color: white;
+/*a:link, a:visited{
+    background-color: transparent;
+    color: black;
     padding: 15px, 25px;
     text-align: center;
     text-decoration: none;
@@ -73,4 +152,4 @@ a:link, a:visited{
 }
 a:hover, a:active{
     background-color: red;
-}
+}*/
