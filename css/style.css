@@ -11,6 +11,11 @@ ul {
     margin-left: 20px; /* Añade un margen a la izquierda para alinear la lista */
     text-align: justify;
 }
+p, li{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
 .boton-container {
     display: flex; /* Habilitar flexbox */
     justify-content: space-between; /* Espacio entre los botones */
@@ -73,12 +78,15 @@ ul {
     font-style: normal;
 }
 table, th, td{
-    border: 1px solid black;
+    border: 0.9px solid black;
     border-collapse: collapse;
     padding: 0.2em;
 }
 td{
     text-align: justify;
+}
+th, td{
+    padding: 0.3rem;
 }
 h1{
     text-align: center;
@@ -88,7 +96,7 @@ h1{
     font-style: normal;
 }
 .fondoGen{
-    background-color: #E6F7FF;
+    background-color: #e6f7ff;
 }
 .tContenido {
     display: table; /* Ajustar para que sea tratado como tabla */
@@ -121,7 +129,26 @@ h1{
     background-position: center;
     opacity: 1;
 }
-
+.fondoBanderaSantander{
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100%;
+    margin-bottom: 20px;
+    background-image: url(../images/banderaSantander.svg.png);
+    background-size: contain;
+    background-position: center;
+    opacity: 1;
+}
+.fondoBanderaAntioquia{
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100%;
+    margin-bottom: 20px;
+    background-image: url(../images/banderaAntioquia.png);
+    background-size: contain;
+    background-position: center;
+    opacity: 1;
+}
 a:link{
     color : black;
     background-color: transparent;
