@@ -16,7 +16,7 @@ p, li{
     font-weight: 300;
     font-style: normal;
 }
-.boton-container {
+.containerBoton {
     display: flex; /* Habilitar flexbox */
     justify-content: space-between; /* Espacio entre los botones */
     align-items: center; /* Centrar verticalmente si es necesario */
@@ -40,7 +40,7 @@ p, li{
 .boton1:hover {
     background-color: #cbeecc; /* Color al pasar el mouse */
 }
-.caja-texto {
+.cajaTexto1 {
     width: 100%; /* Se ajusta al 100% del contenedor o pantalla, hasta el max-width */
     max-width: 60%; /* Limita el ancho máximo al 50% de la pantalla */
     padding: 9px;
@@ -55,7 +55,7 @@ p, li{
     border-radius: 20px;
     box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.55)
 }
-.caja-texto2 {
+.cajaTexto2 {
     width: 100%; /* Se ajusta al 100% del contenedor o pantalla, hasta el max-width */
     max-width:fit-content; /* Limita el ancho máximo al 50% de la pantalla */
     padding: 9px;
@@ -96,7 +96,7 @@ h1{
     font-style: normal;
 }
 .fondoGen{
-    background-color: #e6f7ff;
+    background-color: #d2ecf8;
 }
 .tContenido {
     display: table; /* Ajustar para que sea tratado como tabla */
@@ -145,6 +145,26 @@ h1{
     width: 100%;
     margin-bottom: 20px;
     background-image: url(../images/banderaAntioquia.png);
+    background-size: contain;
+    background-position: center;
+    opacity: 1;
+}
+.fondoBanderaCundinamarca{
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100%;
+    margin-bottom: 20px;
+    background-image: url(../images/banderaCundinamarca.PNG.png);
+    background-size: contain;
+    background-position: center;
+    opacity: 1;
+}
+.fondoBanderaArauca{
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100%;
+    margin-bottom: 20px;
+    background-image: url(../images/banderaArauca.svg.png);
     background-size: contain;
     background-position: center;
     opacity: 1;
